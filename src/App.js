@@ -1,14 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import Card from "./components/Card";
+
+import contents from "./content";
+
+
 
 function App() {
   return (
     <div id='app'>
       <main>
-        <Card />
-        <Card />
-        <Card />
+        {contents.map((content) => {
+          return <Card key={content.id}
+            img={content.img} 
+            alt={content.carType}
+            carType={content.carType}
+            description={content.description}
+          />
+        })}
       </main>
     </div>
   );
