@@ -1,7 +1,7 @@
 import React from "react";
 
-function Button() {
-    return <button>Learn More</button>
+function Button(props) {
+    return <button className={props.classProp}>Learn More</button>
 }
 
 export default Button;

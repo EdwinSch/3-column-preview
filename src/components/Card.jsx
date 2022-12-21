@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import Button from "./Button";
 
 
@@ -10,7 +11,7 @@ function Card(props) {
         <h2>{props.carType}</h2>
         <p>{props.description}</p>
         </div>
-        <Button /> 
+        <Button classProp={props.class}/> 
     </section>
 }
 

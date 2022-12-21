@@ -13,6 +13,8 @@
   --inspect: solid red 1px;
 }
 
+/* --- MAIN STYLE--- */
+
 #app {
   height: 100vh;
   background-color: var(--bg);
@@ -62,7 +64,6 @@ main {
   font-size: 15px;
   line-height: 26px;
 }
-
 button {
   font-family: 'Lexend Deca', sans-serif;
   background: white;
@@ -80,8 +81,19 @@ button:hover {
   background: transparent;
   color: white;
 }
+.btn-1 {
+  color: var(--orange);
+}
+.btn-2 {
+  color: var(--cyan);
+}
+.btn-3 {
+  color: var(--darkCyan);
+}
 
-@media only screen and (max-width:900px) {
+
+/* --- MEDIA QUERY --- */
+@media (max-width:900px) {
   #app {
     height: auto;
   }
@@ -91,11 +103,7 @@ button:hover {
     grid-template-columns: 1fr;
   }
   .card {
-    padding: 50px;
     height: 440px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .card:nth-child(1) {
     border-top-left-radius: 10px;
@@ -109,5 +117,14 @@ button:hover {
   }
   .content > h2 {
     margin: 20px 0px;
+  }
+}
+
+@media (max-width:320px) {
+  .card {
+    padding: 30px;
+  }
+  .content > h2 {
+    margin: 5px 0;
   }
 }

@@ -3,8 +3,6 @@ import Card from "./components/Card";
 
 import contents from "./content";
 
-
-
 function App() {
   return (
     <div id='app'>
@@ -15,6 +13,7 @@ function App() {
             alt={content.carType}
             carType={content.carType}
             description={content.description}
+            class={content.class}
           />
         })}
       </main>
